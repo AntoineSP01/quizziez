@@ -1,0 +1,31 @@
+{
+    "slug": "quiz-1",
+    "title": "Histoire du monde - Quiz difficile",
+    "questions": [
+        {
+            "question": "Qui fut le premier empereur de Chine ?",
+            "answers": ["Kublai Khan", "Sun Tzu", "Liu Bang", "Qin Shi Huang"],
+            "correct": 3
+        },
+        {
+            "question": "En quelle année a eu lieu la bataille de Hastings ?",
+            "answers": ["1089", "1015", "1204", "1066"],
+            "correct": 3
+        },
+        {
+            "question": "Qui fut le dernier pharaon d'Égypte ?",
+            "answers": ["Cléopâtre VII", "Néfertiti", "Akhenaton", "Ramsès II"],
+            "correct": 0
+        },
+        {
+            "question": "Quel fut le nom de la première mission habitée sur la Lune ?",
+            "answers": ["Apollo 11", "Luna 2", "Vostok 1", "Gemini 5"],
+            "correct": 0
+        },
+        {
+            "question": "Quelle civilisation ancienne a construit la ville de Machu Picchu ?",
+            "answers": ["Maya", "Inca", "Aztèque", "Olmèque"],
+            "correct": 1
+        }
+    ]
+}

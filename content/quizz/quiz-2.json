@@ -1,0 +1,31 @@
+{
+    "slug": "quiz-2",
+    "title": "World's Animals",
+    "questions": [
+        {
+            "question": "What is the largest land animal?",
+            "answers": ["Lion", "Giraffe", "Elephant", "Rhinoceros"],
+            "correct": 2
+        },
+        {
+            "question": "Which animal is known as the king of the jungle?",
+            "answers": ["Lion", "Tiger", "Elephant", "Bear"],
+            "correct": 0
+        },
+        {
+            "question": "Which bird is known for its ability to mimic human speech?",
+            "answers": ["Owl", "Eagle", "Penguin", "Parrot"],
+            "correct": 3
+        },
+        {
+            "question": "Which animal is the fastest on land?",
+            "answers": ["Cheetah", "Lion", "Elephant", "Horse"],
+            "correct": 0
+        },
+        {
+            "question": "Which animal is known for its ability to change color?",
+            "answers": ["Snake", "Chameleon", "Octopus", "Lizard"],
+            "correct": 1
+        }
+    ]
+}

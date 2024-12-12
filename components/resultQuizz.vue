@@ -1,4 +1,16 @@
 <script setup>
+
+const reloadPage = () => {
+  window.location.reload(); 
+};
+
+import { useRouter } from 'vue-router';
+const router = useRouter();
+
+const goToQuizList = () => {
+  router.push('/'); 
+};
+
 const form = inject('form');
 
 const { params } = useRoute();
@@ -15,12 +27,18 @@ const compareAnswers = () => {
     }
     return score;
 };
-
 </script>
 
 <template>
-    <h1>Résultat :</h1>
-    <p>Réponses sélectionnées : {{ form.values }}</p>
-    <p>Votre score : {{ compareAnswers() }} / {{ quizz.questions.length }}</p>
+  <div >
+    <h1>Merci d'avoir joué !</h1>
+    <p>Voici vos résultats...</p>
+        <p>Votre score : {{ compareAnswers() }} / {{ quizz.questions.length }}</p>
+    
+    <button @click="reloadPage">Recommencer le quiz</button>
+      
+    <button @click="goToQuizList">Choisir un autre quiz</button>
+  </div>
 </template>
+
 

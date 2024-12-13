@@ -28,7 +28,7 @@ const handleAnswer = (index) => {
 
       
       <div class="text-center text-lg font-medium text-gray-600 mb-8">
-        Question {{ form.step.value }} / {{ quizz.questions.length }}
+        Question {{ form.step.value + 1 }} / {{ quizz.questions.length }}
       </div>
 
       

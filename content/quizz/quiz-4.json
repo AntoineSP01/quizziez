@@ -1,0 +1,91 @@
+{
+    "slug": "quiz-4",
+    "title": "Histoire du Monde - Niveau Avancé",
+    "questions": [
+        {
+            "question": "Qui fut le premier empereur de Chine à unifier les royaumes ?",
+            "answers": ["Liu Bang", "Qin Shi Huang", "Han Wudi", "Zhao Tuo"],
+            "correct": 1
+        },
+        {
+            "question": "En quelle année a eu lieu la première guerre punique entre Rome et Carthage ?",
+            "answers": [
+                "264 av. J.-C.",
+                "218 av. J.-C.",
+                "202 av. J.-C.",
+                "146 av. J.-C."
+            ],
+            "correct": 0
+        },
+        {
+            "question": "Qui a fondé l'Empire Mongol ?",
+            "answers": ["Kublai Khan", "Jebe", "Gengis Khan", "Tamerlan"],
+            "correct": 2
+        },
+        {
+            "question": "Quelle bataille décida de l'issue de la guerre de Cent Ans entre la France et l'Angleterre ?",
+            "answers": [
+                "Bataille de Poitiers",
+                "Bataille d'Azincourt",
+                "Bataille de Castillon",
+                "Bataille de Crécy"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Quel est le nom du traité qui mit fin à la guerre de Trente Ans ?",
+            "answers": [
+                "Traité de Versailles",
+                "Traité de Westphalie",
+                "Traité de Paris",
+                "Traité de Tordesillas"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Quel empire a été à l'origine de la construction de la Grande Muraille de Chine ?",
+            "answers": [
+                "Empire Han",
+                "Empire Ming",
+                "Empire Qin",
+                "Empire Tang"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "En quelle année Christophe Colomb a-t-il atteint les Amériques ?",
+            "answers": ["1492", "1498", "1501", "1487"],
+            "correct": 0
+        },
+        {
+            "question": "Quel fut le nom du plus grand dirigeant du Royaume d'Assyrie ?",
+            "answers": [
+                "Sargon II",
+                "Tiglath-Phalasar III",
+                "Assurbanipal",
+                "Shalmaneser III"
+            ],
+            "correct": 2
+        },
+        {
+            "question": "Qui a été le dernier tsar de Russie avant la Révolution de 1917 ?",
+            "answers": [
+                "Pierre le Grand",
+                "Nicolas II",
+                "Alexandre III",
+                "Nicolas Ier"
+            ],
+            "correct": 1
+        },
+        {
+            "question": "Lors de quel événement l'Empire Ottoman a-t-il été officiellement dissous ?",
+            "answers": [
+                "Bataille de Lépante",
+                "Traité de Sèvres",
+                "Traité de Lausanne",
+                "Révolution des Jeunes Turcs"
+            ],
+            "correct": 2
+        }
+    ]
+}

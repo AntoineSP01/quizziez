@@ -1,9 +1,9 @@
 <script setup>
 const props = defineProps({
-    questionIndex: {
-        type: Number,
-        required: true,
-    },
+  questionIndex: {
+    type: Number,
+    required: true,
+  },
 });
 
 const { params } = useRoute();
@@ -11,37 +11,43 @@ const quizz = await queryContent(`quizz/${params.slug}`).findOne();
 
 const form = inject('form');
 
-// Fonction pour sauvegarder la réponse et passer à la question suivante
+
 const handleAnswer = (index) => {
-    form.save(index); // Sauvegarde la réponse
-    // Ici, vous pouvez gérer la navigation ou l'incrémentation de l'étape
-    console.log('Réponse sélectionnée:', index);
+  form.save(index); 
+  console.log('Réponse sélectionnée:', index);
 };
 </script>
 
 <template>
-    <NuxtLayout name="">
-        <div class="w-full max-w-xl mx-auto my-3">
-            <h1>{{ quizz.title }}</h1>
-            <div>Question {{ form.step.value }} / {{ quizz.questions.length }}</div>
-            <br />
-            <div>{{ form }}</div>
-            <section class="flex flex-col gap-5">
-                <div>{{ quizz.questions[questionIndex].question }}</div>
+    
+    <div class="w-full max-w-3xl mx-auto my-10 bg-[#f7f5f2] rounded-lg shadow-lg p-8">
+      
+      <h1 class="text-3xl font-bold text-center text-[#333] mb-6">
+        {{ quizz.title }}
+      </h1>
 
-                <!-- Liste des réponses sous forme de boutons -->
-                <div
-                    v-for="(answer, index) in quizz.questions[questionIndex].answers"
-                    :key="index"
-                >
-                    <button
-                        @click="handleAnswer(index)"
-                        class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-700 transition"
-                    >
-                        {{ answer }}
-                    </button>
-                </div>
-            </section>
+      
+      <div class="text-center text-lg font-medium text-gray-600 mb-8">
+        Question {{ form.step.value }} / {{ quizz.questions.length }}
+      </div>
+
+      
+      <section class="flex flex-col gap-6">
+        <div class="text-2xl font-semibold text-center text-[#444]">
+          {{ quizz.questions[questionIndex].question }}
         </div>
-    </NuxtLayout>
+
+        
+        <div class="flex flex-col gap-4">
+          <button
+            v-for="(answer, index) in quizz.questions[questionIndex].answers"
+            :key="index"
+            @click="handleAnswer(index)"
+            class="w-full bg-[#0b0f19] text-white text-lg font-medium py-3 px-4 rounded-lg hover:bg-blue-400 transition duration-300"
+          >
+            {{ answer }}
+          </button>
+        </div>
+      </section>
+    </div>
 </template>

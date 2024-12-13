@@ -16,6 +16,6 @@ provide('form', form);
     <div>
         <QuestionForm1 v-if="step < totalSteps" :questionIndex="step" />
 
-        <ResultQuizz v-if="step >= totalSteps" />
+        <ResultQuizz v-else />
     </div>
 </template>
